@@ -64,7 +64,7 @@ docker ps
 
     Пример передачи токена (token) и идентификатора пользователя (id) в заголовке запроса:
 
-    <img src="https://github.com/wenerikk5/task_12_converter/blob/0cd2d42ff5ecfe6845e5861844d98c0bf0127643/services/web/converter/data/authorization.png" alt="2" width="800" height="230">
+    <img src="https://github.com/wenerikk5/task_12_converter/blob/0cd2d42ff5ecfe6845e5861844d98c0bf0127643/services/web/converter/data/authorization.png">
 
 
 3. Запрос на передачу 'wav'-аудиозаписи, конвертацию и сохранение в 'mp3'.
@@ -76,7 +76,7 @@ docker ps
 
     Пример запроса на конвертацию и сохранение аудиозаписи (в поле file выбрать тип file):
 
-    <img src="https://github.com/wenerikk5/task_12_converter/blob/0cd2d42ff5ecfe6845e5861844d98c0bf0127643/services/web/converter/data/post_record.png" alt="3" width="800" height="440">
+    <img src="https://github.com/wenerikk5/task_12_converter/blob/0cd2d42ff5ecfe6845e5861844d98c0bf0127643/services/web/converter/data/post_record.png">
 
 4. Запрос на получение списка сохраненных аудиозаписей пользователя.
     Направить GET-запрос:
@@ -87,7 +87,7 @@ docker ps
 
     Пример запроса списка записей:
 
-    <img src="https://github.com/wenerikk5/task_12_converter/blob/0cd2d42ff5ecfe6845e5861844d98c0bf0127643/services/web/converter/data/get_records.png" alt="4" width="800" height="740">
+    <img src="https://github.com/wenerikk5/task_12_converter/blob/0cd2d42ff5ecfe6845e5861844d98c0bf0127643/services/web/converter/data/get_records.png">
 
 5. Обновление токена. 
     Для обновления токена необходимо направить POST-запрос:
