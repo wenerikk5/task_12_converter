@@ -29,7 +29,12 @@ def upload():
     upload_folder = current_app.config['UPLOAD_FOLDER']
     error = ''
 
+    if 'file' not in request.files:
+        msg = 'Запрос не содержит файла с полем "file"'
+        return bad_request(msg)
+
     file = request.files['file']
+
     if file and allowed_file(file.filename, length):
         filename = secure_filename(file.filename)[:50]
         file.save(os.path.join(upload_folder, filename))
