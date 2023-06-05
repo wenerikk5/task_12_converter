@@ -86,7 +86,8 @@ docker ps
     При успешной обработке будет получен JSON-ответ в виде списка сохранненных записей пользователя.
 
     Пример запроса списка записей:
-    <img src="https://github.com/wenerikk5/task_12_converter/blob/0cd2d42ff5ecfe6845e5861844d98c0bf0127643/services/web/converter/data/get_recods.png" alt="4" width="800" height="740">
+
+    <img src="https://github.com/wenerikk5/task_12_converter/blob/0cd2d42ff5ecfe6845e5861844d98c0bf0127643/services/web/converter/data/get_records.png" alt="4" width="800" height="740">
 
 5. Обновление токена. 
     Токен может быть обновлен в любой момент. Для обновления токена необходимо направить POST-запрос:
