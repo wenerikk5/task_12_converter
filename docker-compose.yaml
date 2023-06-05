@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:14.5-alpine
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    expose:
+      - 5432
+    env_file:
+      - ./services/web/converter/.env
+
+  web:
+    build:
+      context: ./services/web
+      dockerfile: Dockerfile
+    restart: always
+    volumes:
+      - static_volume:/var/static
+    expose:
+      - 5000
+    depends_on:
+      - db
+    env_file:
+      - ./services/web/converter/.env
+
+  nginx:
+    build:
+      context: ./services/nginx
+      dockerfile: Dockerfile
+    volumes:
+      - static_volume:/var/static
+    ports:
+      - 80:80
+    depends_on:
+      - web
+
+volumes:
+  postgres_data:
+  static_volume:
