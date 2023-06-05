@@ -54,7 +54,10 @@ docker ps
     Будет получен ответ в формате JSON:  {"id": "base32 string", "token": "UUID string"}
 
     Пример:
-    <img src="https://github.com/wenerikk5/task_12_converter/blob/0cd2d42ff5ecfe6845e5861844d98c0bf0127643/services/web/converter/data/registration.png" alt="img" width="800" height="360'>
+
+    <img src="https://github.com/wenerikk5/task_12_converter/blob/12f12547e3b6060544ccee1ccf241e7947e2c69c/services/web/converter/data/registration.png" alt="img" width="800" height="360'>
+    <img src="https://github.com/wenerikk5/task_12_converter/blob/12f12547e3b6060544ccee1ccf241e7947e2c69c/services/web/converter/data/registration.png">
+    <img src="https://github.com/wenerikk5/dev_rooms_Flask/blob/7ff2b002b5f95f879b31ba863e07e3038a14e7b3/rooms/static/uploads/base/Preview.png" alt="img" width="800" height='600'>
 
 2. Для авторизации пользователя запросы должны содержать:
     - Токен в заголовоке Authorization в формате 'Bearer token'
